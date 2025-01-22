@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+    width: 100vw;
+    height: 100vh;
+}
+
+.board {
+    padding:2vw;
+    background-color: #699157  ;
+}
+
+.nav {
+    background-color: #657D5A  ;
+}
+
+.nav_bar {
+    list-style: none;
+    display: inline-block;
+    width: 100%;
+}
+
+.nav_bar li {
+    padding: 1vw;
+    display: inline-block;
+    color: #f2f2f2;
+    font-size: 1.2em;
+
+}
+
+
+
+
+
+/* MODAL */
+
+.end_game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    display: none;
+    z-index: 1;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    overflow: auto;
+}
+
+.restart {
+    background-color: #79B971  ;
+    height: 20vh;
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: #000 solid 5px;
+
+}
+
+.play_again {
+    padding: 6%;
+    border: solid 3px #000;
+    text-align: center;
+    font-size: 120%;
+    background: linear-gradient(to left, #f2f2f2 50%, #1699D1 50%) right;
+    background-size: 200%;
+    transition: .8s ease-out;
+    cursor: pointer;
+}
+
+.play_again:hover {
+    background-position: left;
+    color: #f2f2f2;
+}
+
+
+/* END OF MODAL*/
+
+
+
+/* GAME ASSETS*/
+
+.board_section {
+    padding: 1.2em;
+    background-color: #88C752   ;
+}
+
+.snake {
+    background-color: #1699D1;
+}
+
+.snake_head {
+    background-color: #1699D1;
+
+    /*
+    background: linear-gradient(to left, #88C752 50%, #1699D1 50%) right;
+    background-size: 200% 100%;
+    transition: 1s;
+    */
+
+}
+
+
+.snake_tail {
+   /* background: linear-gradient(to right, #1699D1 50%,#88C752  50%) left;
+    
+    background-size: 200% 100%;
+    transition: 0.1s; */
+
+    background-color: #1699D1;
+
+}
+
+.fruit {
+    background-color: red; 
+   /* background-image: url('views/fruit.png'); */
+}
+
+@media screen and (max-width:1250px){
+    .board_section {
+        padding: 0.8em;
+    }
+}
